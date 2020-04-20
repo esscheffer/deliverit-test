@@ -1,0 +1,19 @@
+<div ng-init="init()">
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>Original Value</td>
+            <td>Adjusted Value</td>
+            <td>Due Days</td>
+            <td>Payment Date</td>
+        </tr>
+
+        <tr ng-repeat="bill in bills">
+            <td>{{ bill.name }}</td>
+            <td>{{ bill.originalValue }}</td>
+            <td>{{ bill.adjustedValue }}</td>
+            <td>{{ bill.dueDays }}</td>
+            <td>{{ bill.paymentDate }}</td>
+        </tr>
+    </table>
+</div>

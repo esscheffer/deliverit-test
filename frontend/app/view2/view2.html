@@ -1,0 +1,8 @@
+<form novalidate name="form">
+    <label>Name: <input type="text" ng-model="bill.name"/></label><br/>
+    <label>Original value: <input type="number" ng-model="bill.originalValue"/></label><br/>
+    <label>Due Date: <input type="date" ng-model="bill.dueDate"/></label><br/>
+    <label>Payment Date: <input type="date" ng-model="bill.paymentDate"/></label><br/>
+    <input type="button" ng-click="reset(form)" value="Reset"/>
+    <input type="submit" ng-click="update(bill)" value="Save"/>
+</form>
